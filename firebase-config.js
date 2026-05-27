@@ -12,7 +12,7 @@ window.UAV_FIREBASE_CONFIG = {
 // Add the 3 Google account emails that are allowed to use the shared planner.
 // Example: ["teacher1@example.com", "teacher2@example.com", "teacher3@example.com"]
 window.UAV_ALLOWED_EMAILS = [
-  "Suphalerk.chur@gmail.com",
+  "suphalerk.chur@gmail.com",
   "pattarasak975@gmail.com",
-  "Anukornpp@gmail@gmail.com"
+  "anukornpp@gmail@gmail.com"
 ];
