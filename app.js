@@ -277,7 +277,7 @@ async function saveRemoteState(options = {}) {
     await firestoreDb.collection(FIRESTORE_COLLECTION).doc(FIRESTORE_DOC).set({
       state: getSerializableState(),
       updatedAt: firebase.firestore.FieldValue.serverTimestamp()
-    }, { merge: true });
+    });
   } catch (error) {
     console.error("Firestore save failed", error);
     const code = error?.code ? ` (${error.code})` : "";
@@ -403,7 +403,7 @@ function startFirestoreListener() {
       await sharedDoc.set({
         state: getSerializableState(),
         updatedAt: firebase.firestore.FieldValue.serverTimestamp()
-      }, { merge: true });
+      });
       showToast("สร้างฐานข้อมูลกลางเรียบร้อยแล้ว");
       return;
     }
